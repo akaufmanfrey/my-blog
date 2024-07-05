@@ -26,7 +26,8 @@ submitButton.addEventListener('click', function(e) {
     if (blogPost.username && blogPost.title && blogPost.content) {
         tempArray.push(blogPost);
         localStorage.setItem('storage', JSON.stringify(tempArray));
-        // window.location.href = 'blog.html'
+        // move to blog posts page
+        window.location.href = './blog.html'
     } else {
         window.alert('Please complete all fields of form');
     }

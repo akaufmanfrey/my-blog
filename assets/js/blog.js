@@ -1,3 +1,6 @@
+// back button for returning to form page
+const backBtn = document.querySelector('#back');
+
 // function to get posts from storage and load them to the screen
 function loadFromLocalStorage() {
     // grab posts from local storage
@@ -13,16 +16,21 @@ function loadFromLocalStorage() {
             const pstContent = document.createElement('p');
 
             //set the text content of each element
-            title.textContent = post.title;
-            username.textContent = "Posted by: " + post.username;
-            content.textContent = post.content;
+            pstTitle.textContent = post.title;
+            pstUsername.textContent = "Posted by: " + post.username;
+            pstContent.textContent = post.content;
 
             //add elements to the document body
-            post.appendChild(pstTitle);
+            blgPost.appendChild(pstTitle);
             blgPost.appendChild(pstContent);
             blgPost.appendChild(pstUsername);
             document.body.appendChild(blgPost);
         })
     }
 }
+
+backBtn.addEventListener('click', function() {
+    window.location.href = './index.html';
+});
+
 loadFromLocalStorage();

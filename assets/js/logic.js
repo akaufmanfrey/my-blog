@@ -7,6 +7,7 @@ function toggleBackground(e) {
     const formTitle = document.querySelector('#blgtitle');
     const submitButton = document.querySelector('#submit');
     const backgroundCircle = document.getElementById('container');
+    const bckButton = document.querySelector('#back');
     // if current mode is light, change mode to dark
     if (modeButton.textContent === '☀️') {
         modeButton.textContent = '🌙';
@@ -23,6 +24,11 @@ function toggleBackground(e) {
         // if on form page, change background of title container to black
         if (backgroundCircle) {
             backgroundCircle.style.background = 'radial-gradient(ellipse at center, #e9f812 0%,#e9f812 47%, #e9f812 47%,#000000 47%,#000000 48%)'
+        } 
+        // if not on the form page, make sure color of back button is correct
+        else {
+            bckButton.style.backgroundColor = 'white';
+            bckButton.style.color = 'black';
         }
 
     } else {
@@ -41,6 +47,11 @@ function toggleBackground(e) {
         // if on form page, change background of title container to white
         if (backgroundCircle) {
             backgroundCircle.style.background = 'radial-gradient(ellipse at center, #e9f812 0%,#e9f812 47%, #e9f812 47%,#ffffff 47%,#ffffff 48%)'
+        } 
+        // if not on the form page, make sure color of back button is correct
+        else {
+            bckButton.style.backgroundColor = 'black';
+            bckButton.style.color = 'white';
         }
     }
     // if on the form page, change the background of the title text to be transparent, change circle background and change submit button color
