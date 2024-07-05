@@ -11,3 +11,10 @@ header {
    background-color: black;
    color: white;
 }
+footer {
+   text-align: center;
+}
+a {
+   font-size: 30px;
+   color: black;
+}

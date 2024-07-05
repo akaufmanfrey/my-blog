@@ -24,7 +24,7 @@ function loadFromLocalStorage() {
             blgPost.appendChild(pstTitle);
             blgPost.appendChild(pstContent);
             blgPost.appendChild(pstUsername);
-            document.body.appendChild(blgPost);
+            document.getElementById('allposts').appendChild(blgPost);
         })
     }
 }
