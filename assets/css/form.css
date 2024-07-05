@@ -1,0 +1,57 @@
+/* Format section containing form and title image. Centering them vertically  */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 900px;
+}
+form {
+    width: 50%;
+}
+h1 {
+    text-align: center;
+}
+button {
+    border: 0;
+}
+
+/* Style title text  */
+p {
+    text-align: center;
+    font-size: 30px;
+    background: transparent;
+}
+
+input {
+    width: 100%;
+    margin: 5px;
+}
+
+label {
+    margin: 5px;
+}
+
+textarea {
+    display: inline-block;
+    width: 100%;
+    margin: 5px;
+    border-style: inset;
+    height: 16px;
+}
+/* Sets the circular background image and centers the title */
+#container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at center, #e9f812 0%,#e9f812 47%, #e9f812 47%,#ffffff 47%,#ffffff 48%);
+}
+
+#submit {
+    background-color: rgb(30, 199, 30);
+}
+
+#content {
+    height: 100px;
+}

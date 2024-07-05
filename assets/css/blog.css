@@ -1,0 +1,13 @@
+
+/* Set default light mode style for blog posts */
+section {
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 5px;
+    padding: 1%;
+}
+
+/* Turn off default border on mode button */
+#mode {
+    border: 0;
+}
