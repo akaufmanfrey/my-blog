@@ -7,10 +7,10 @@ function loadFromLocalStorage() {
 
         //for each post, make new elements for the post and its title, username, and content
         storedData.forEach((post) => {
-            const blogPost = document.createElement('section');
-            const title = document.createElement('h2');
-            const username = document.createElement('footer');
-            const content = document.createElement('p');
+            const blgPost = document.createElement('section');
+            const pstTitle = document.createElement('h2');
+            const pstUsername = document.createElement('footer');
+            const pstContent = document.createElement('p');
 
             //set the text content of each element
             title.textContent = post.title;
@@ -18,10 +18,10 @@ function loadFromLocalStorage() {
             content.textContent = post.content;
 
             //add elements to the document body
-            blogPost.appendChild(title);
-            blogPost.appendChild(content);
-            blogPost.appendChild(username);
-            document.body.appendChild(blogPost);
+            post.appendChild(pstTitle);
+            blgPost.appendChild(pstContent);
+            blgPost.appendChild(pstUsername);
+            document.body.appendChild(blgPost);
         })
     }
 }

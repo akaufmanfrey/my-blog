@@ -4,7 +4,7 @@ const modeButton = document.querySelector('#mode');
 function toggleBackground(e) {
     e.preventDefault();
 
-    const formTitle = document.querySelector('#title');
+    const formTitle = document.querySelector('#blgtitle');
     const submitButton = document.querySelector('#submit');
     const backgroundCircle = document.getElementById('container');
     // if current mode is light, change mode to dark

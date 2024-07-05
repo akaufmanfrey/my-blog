@@ -13,17 +13,20 @@ if (posts) {
 }
 
 // Store blog post when submit button is pushed and all fields have content
-submitButton.addEventListener('click', function() {
+submitButton.addEventListener('click', function(e) {
+    e.preventDefault();
     // Object to be posted on blog
     const blogPost = {
         username: userName.value,
         title: blogTitle.value,
         content: blogContent.value
     }
+    console.log(blogPost);
     // If all fields are non-empty, add post to array and store the array
     if (blogPost.username && blogPost.title && blogPost.content) {
         tempArray.push(blogPost);
         localStorage.setItem('storage', JSON.stringify(tempArray));
+        // window.location.href = 'blog.html'
     } else {
         window.alert('Please complete all fields of form');
     }
